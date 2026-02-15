@@ -48,6 +48,8 @@ export default function TechGridBackground() {
           animation: "lightSweep 8s ease-in-out infinite",
         }}
       />
+            
+      
 
       {/* Center Glow */}
       <div
