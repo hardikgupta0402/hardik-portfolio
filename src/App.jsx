@@ -1,3 +1,6 @@
+import TechGridBackground from "./components/TechGridBackground";
+
+
 import Navbar from "./components/Navbar";
 import Hero3D from "./components/Hero3D";
 import About from "./components/About";
@@ -9,7 +12,8 @@ import Contact from "./components/Contact";
 
 function App() {
   return (
-    <div>
+    <>
+      <TechGridBackground />
       <Navbar />
       <Hero3D />
       <About />
@@ -18,8 +22,14 @@ function App() {
       <Projects />
       <Research />
       <Contact />
-    </div>
+    </>
   );
 }
+
+
+
+
+
+
 
 export default App;

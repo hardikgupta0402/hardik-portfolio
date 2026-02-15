@@ -28,19 +28,21 @@ export default function Hero3D() {
         overflow: "hidden",
       }}
     >
-      {/* 3D Background */}
+      {/* 3D Orb Layer */}
       <div
         style={{
           position: "absolute",
           inset: 0,
-          zIndex: 0,
+          zIndex: 2,   // 👈 Above particles
         }}
       >
         <Canvas camera={{ position: [0, 0, 6], fov: 50 }}>
           <ambientLight intensity={0.2} />
           <directionalLight position={[4, 4, 4]} intensity={1.5} />
           <pointLight position={[-3, -3, -3]} intensity={1} />
+
           <FloatingOrb />
+
           <OrbitControls
             enableZoom={false}
             enableRotate={false}
@@ -55,7 +57,7 @@ export default function Hero3D() {
       <div
         style={{
           position: "relative",
-          zIndex: 1,
+          zIndex: 3,   // 👈 Above orb
           height: "100vh",
           display: "flex",
           flexDirection: "column",
@@ -97,7 +99,8 @@ export default function Hero3D() {
             pointerEvents: "auto",
           }}
           onMouseEnter={(e) =>
-            (e.target.style.boxShadow = "0 0 20px rgba(147, 51, 234, 0.6)")
+            (e.target.style.boxShadow =
+              "0 0 20px rgba(147, 51, 234, 0.6)")
           }
           onMouseLeave={(e) =>
             (e.target.style.boxShadow = "none")

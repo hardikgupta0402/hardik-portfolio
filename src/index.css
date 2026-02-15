@@ -33,3 +33,42 @@ html {
 section {
   scroll-margin-top: 100px;
 }
+@keyframes gridMove {
+  from {
+    background-position: 0 0, 0 0;
+  }
+  to {
+    background-position: 80px 80px, 80px 80px;
+  }
+}
+@keyframes moveStripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 600px 600px;
+  }
+}
+@keyframes moveStripes {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 600px 600px;
+  }
+}
+
+@keyframes lightSweep {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: translateX(100%);
+    opacity: 0.2;
+  }
+}
+
