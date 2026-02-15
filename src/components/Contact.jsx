@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 export default function Contact() {
   return (
     <section
+    id="contact"
       style={{
         minHeight: "70vh",
         padding: "80px 20px",

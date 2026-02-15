@@ -32,6 +32,8 @@ const skillGroups = [
 export default function Skills() {
   return (
     <section
+    id="skills"
+
       style={{
         minHeight: "100vh",
         padding: "80px 20px",

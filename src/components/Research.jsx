@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 export default function Research() {
   return (
     <section
+     id="research"
       style={{
         minHeight: "80vh",
         padding: "80px 20px",

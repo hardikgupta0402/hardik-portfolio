@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 export default function Experience() {
   return (
     <section
+    id="experience"
       style={{
         minHeight: "100vh",
         padding: "80px 20px",

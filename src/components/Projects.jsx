@@ -40,6 +40,7 @@ const projects = [
 export default function Projects() {
   return (
     <section
+      id="projects"
       style={{
         minHeight: "100vh",
         padding: "80px 20px",

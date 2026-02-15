@@ -1,3 +1,4 @@
+import Navbar from "./components/Navbar";
 import Hero3D from "./components/Hero3D";
 import About from "./components/About";
 import Skills from "./components/Skills";
@@ -9,6 +10,7 @@ import Contact from "./components/Contact";
 function App() {
   return (
     <div>
+      <Navbar />
       <Hero3D />
       <About />
       <Skills />

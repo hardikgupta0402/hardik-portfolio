@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 export default function About() {
   return (
     <section
+    id="about"
       style={{
         minHeight: "100vh",
         display: "flex",
